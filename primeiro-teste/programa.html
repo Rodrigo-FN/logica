@@ -8,6 +8,12 @@
 </head>
 <body>
     <script>
+        let anoAtual = 2023
+        let rodrigo = 26
+        let flavio = 27
+        let pedro = 50
+        let mediaIdade = (rodrigo + flavio + pedro) / 3
+
         document.write("A idade do Rodrigo é ");
         document.write (18 + 8);
         document.write ("<br>");
@@ -29,16 +35,35 @@
         document.write ("<br>");
         document.write ("<br>");
 
-        document.write (`A soma das idades é ${(20 + 10 + 30)/3}`)
+        document.write (`A soma das idades é ${(20 + 10 + 30)}`)
 
         document.write ("<br>");
         document.write ("<br>");
 
-        document.write (`Rodigo nasceu em ${2022 - 26} <br>`);
-        document.write (`Flávio nasceu em ${2022 - 39} <br>`);
-        document.write (`Pedro nasceu em ${2022 - 22}`);
+        document.write (`Rodigo nasceu em ${anoAtual - rodrigo} <br>`);
+        document.write (`Flávio nasceu em ${anoAtual - flavio} <br>`);
+        document.write (`Pedro nasceu em ${anoAtual - pedro}`);
 
+        document.write ("<br>");
+        document.write ("<br>");
 
+        document.write(`A média das idades dos 3 é de ${mediaIdade.toFixed(2)} anos.`)
+
+        document.write ("<br>");
+        document.write ("<br>");
+
+//-------------------------------------------------------------------------------
+
+        let ano = 2023;
+        document.write(`Flávio tem ${ano - 1997} anos.`)
+        document.write ("<br>");
+        document.write(`Joaquim tem ${ano - 1996} anos.`)
+        document.write ("<br>");
+
+        ano = 2026
+        document.write(`Barney tem ${ano - 1976} anos.`)
+        document.write ("<br>");
+        document.write ("<br>");
 
     </script>
 </body>
