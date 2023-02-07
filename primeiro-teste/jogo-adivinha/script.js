@@ -8,10 +8,19 @@ function mostra (frase) {
 }
 
 let numeroPensado = Math.random() * 10;
-let chute = parseInt(prompt("Chute um número de 0 a 10:"));
+let tentativas = 1;
+while( tentativas <= 3 ) {
 
-if(chute == numeroPensado.toFixed(0)){
-    mostra(`Parabéns você acertou!`);
-}else {
-    mostra("Que pena você errou! O número pensado era " + numeroPensado.toFixed(0));
+    let chute = parseInt(prompt("Chute um número de 0 a 10:"));
+
+    if(chute == numeroPensado.toFixed(0)){
+        mostra(`Parabéns você ACERTOU, o número pensado era ${numeroPensado}`);
+        break;
+        
+    }else {
+        mostra("Você ERROU!");
+    }
+
+    tentativas++;
 }
+
